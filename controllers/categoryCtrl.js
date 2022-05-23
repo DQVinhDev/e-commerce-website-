@@ -3,13 +3,17 @@ const Products = require('../models/productModel')
 
 
 const categoryCtrl = {
-    getCategories: async (req,res) => {
-        const caregories = await Category.find() 
-        res.json(categories)
+    getCategories: async(req, res) =>{
+        try {
+            const categories = await Category.find()
+            res.json(categories)
+        } catch (err) {
+            return res.status(500).json({msg: err.message})
+        }
     },
     createCategory: async (req, res) =>{
         try {
-            // if user have role = 1 ---> admin
+            // if user have role = 1 : admin
             // only admin can create , delete and update category
             const {name} = req.body;
             const category = await Category.findOne({name})
@@ -49,4 +53,4 @@ const categoryCtrl = {
 }
 
 
-module.exports = categoryCtrl
+module.exports = categoryCtrl;

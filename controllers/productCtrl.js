@@ -48,7 +48,6 @@ class APIfeatures {
 const productCtrl = {
     getProducts: async(req, res) =>{
         try {
-            
             const features = new APIfeatures(Products.find(), req.query)
             .filtering().sorting().paginating()
 
@@ -110,4 +109,3 @@ const productCtrl = {
 
 
 module.exports = productCtrl
-

@@ -1,4 +1,3 @@
-
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
@@ -7,11 +6,12 @@ function Login() {
     const [user, setUser] = useState({
         email:'', password: ''
     })
-    
+
     const onChangeInput = e =>{
         const {name, value} = e.target;
         setUser({...user, [name]:value})
     }
+
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
@@ -24,7 +24,7 @@ function Login() {
             alert(err.response.data.msg)
         }
     }
-    
+
     return (
         <div className="login-page">
             <form onSubmit={loginSubmit}>

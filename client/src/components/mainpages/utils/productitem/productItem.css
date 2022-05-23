@@ -4,7 +4,7 @@
     height: 500px;
     padding: 15px;
     box-shadow: 0 0 15px #ddd;
-    margin: 10px 0 ;
+    margin: 10px 0;
     position: relative;
 }
 .product_card img{
@@ -25,7 +25,7 @@
 .product_card span{
     color: crimson;
 }
-.product_box p {
+.product_box p{
     width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;

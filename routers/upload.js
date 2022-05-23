@@ -14,7 +14,7 @@ cloudinary.config({
 
 // Upload image only admin can use
 
-router.post('/upload', (req, res) =>{
+router.post('/upload', (req, res,next) =>{
     try {
         console.log(req.files)
         if(!req.files || Object.keys(req.files).length === 0)
@@ -71,4 +71,4 @@ const removeTmp = (path) =>{
     })
 }
 
-module.exports = router
+module.exports = router;
