@@ -1,43 +1,88 @@
 header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+}
+.header-main{
+ 
+    top: 0;
     min-height: 70px;
     width: 100%;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    background-color: black;
+}
+.User{
+    color: black;
 }
 header .logo{
     flex: 1;
-
+}
+header h1 {
+    font-style: italic;
+    color: #555;
+    font-size: 15px;
 }
 header a{
-    text-decoration: uppercase;
+    
     color: #555;
 }
-header ul li {
+header ul li{
+    color: azure;
     display: inline-block;
-    opacity: 0.7;
-    padding: 0 20px;
-}
-header ul li :hover{
     opacity: 1;
+    padding: 0 20px;
+    position: relative;
+    
 }
+header ul li span{
+
+    color: white;
+    position: absolute;
+    top:35px;
+    right: 2px;
+    font-size: 15px;
+    z-index: 2;
+    
+}
+
+header img{
+    margin-left: 20px;
+    filter: invert(62%) sepia(10%) saturate(335%) hue-rotate(194deg) brightness(87%) contrast(85%);
+}
+header ul li:hover{
+    opacity: 0.7;
+}
+header img:hover{
+    opacity: 0.7;
+}
+
 .menu{
     display: none;
 }
+
+
 .cart-icon{
     position: relative;
     margin-right: 20px;
+    
 }
-.cart-icon span {
+
+.cart-icon span{
     background: crimson;
     border-radius: 20px;
     color: white;
     position: absolute;
-    top: -10px;
+    top:-10px;
     right: -10px;
     padding: 5px 7px;
     font-size: 10px;
+    z-index: 2;
+    
 }

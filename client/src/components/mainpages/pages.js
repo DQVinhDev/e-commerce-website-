@@ -13,6 +13,7 @@ import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
 
+
 import {globalState} from '../../globalState'
 
 
@@ -22,7 +23,9 @@ function Pages(){
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
     return (
-        <Routes>
+        <>
+            <div className="main-page"></div>
+            <Routes>
             <Route exact path="/" element={<Products/>} />
             <Route exact path="/detail/:id" element={<DetailProduct/>} />
 
@@ -38,13 +41,26 @@ function Pages(){
             <Route exact path="/history/:id"  element={isLogged ? <OrderDetails/>  : <NotFound/>}  />
     
             <Route exact path="/cart"  element={<Cart/>} />
+            
         
         
             <Route exact path="/*"  element={<NotFound/>} />
 
 
             <Route path="*" exact component={<NotFound/>} />
+
+            <Route path='/facebook' component={() => { 
+                window.location.href = 'https://www.facebook.com/vin0405/'; 
+                return null;
+            }}/>
+
+            <Route path='/github' component={() => { 
+                window.location.href = 'https://github.com/vinhkute24'; 
+                return null;
+            }}/>
         </Routes>
+        </>
+        
     )
 }
 export default Pages

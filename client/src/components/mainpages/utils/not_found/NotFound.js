@@ -4,8 +4,10 @@ import React from "react";
 
 function NotFound() {
     return(
-        <div>
-            404 error
+        <div className="Main-404">
+            <h1>404</h1>
+            <div className="Content-404">Not Found</div>
+            <div className="description-404">The Resource requested could not be found on this server!</div>
         </div>
     )
 }

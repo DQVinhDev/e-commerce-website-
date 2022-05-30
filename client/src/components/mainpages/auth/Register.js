@@ -29,7 +29,8 @@ function Register() {
     return (
         <div className="login-page">
             <form onSubmit={registerSubmit}>
-                <h2>Register</h2>
+                <h2 className="login-page-h3">Create account</h2>
+                <span>Your account for everything Quang Vinh Shop</span>
                 <input type="text" name="name" required
                 placeholder="Name" value={user.name} onChange={onChangeInput} />
 
@@ -41,7 +42,7 @@ function Register() {
 
                 <div className="row">
                     <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
+                    <Link className="row-link" to="/login">Back to sign in</Link>
                 </div>
             </form>
         </div>

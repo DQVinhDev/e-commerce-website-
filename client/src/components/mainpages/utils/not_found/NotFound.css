@@ -1,0 +1,16 @@
+.Main-404{
+    text-align: center;
+    background-color: #FAF9F8;
+    padding: 100px 0 150px 0;
+}
+
+.Main-404 h1{
+    font-size: 130px;
+    opacity: 0.8;
+    color: #222222;
+}
+.Main-404 .Content-404{
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}

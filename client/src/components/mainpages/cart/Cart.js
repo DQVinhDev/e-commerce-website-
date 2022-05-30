@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from 'react'
 import {globalState} from '../../../globalState'
 import axios from 'axios'
 import PaypalButton from './PaypalButton'
-
+import Cart_empty from '../../headers/icon/cart_empty.svg'
 function Cart() {
     const state = useContext(globalState)
     const [cart, setCart] = state.userAPI.cart
@@ -78,21 +78,32 @@ function Cart() {
 
 
     if(cart.length === 0) 
-        return <h2 style={{textAlign: "center", fontSize: "5rem"}}>Cart Empty</h2> 
+        return (
+            <>
+                <img className="img-cart" src={Cart_empty} alt="" width="200" />
+                <h2 className="img-cart-h2" style={{textAlign: "center", fontSize: "24px"}}>YOUR SHOPPING BAG IS EMPTY!</h2> 
+            </>
+            
+        )
+        
 
     return (
         <div>
-            {
+            <h1 className='h1-shopping-bag'>Shopping bag</h1>
+            <div className='main-shopping-bag'>
+                <div className='main-shopping-bag-2'>
+                {
                 cart.map(product => (
-                    <div className="detail cart" key={product._id}>
-                        <img src={product.images.url} alt="" />
+                    
+                    <div className="detail-2 cart" key={product._id}>
+                        <img className="detail-img-2"  src={product.images.url} alt="" />
 
-                        <div className="box-detail">
+                        <div className="box-detail-2">
                             <h2>{product.title}</h2>
 
                             <h3>$ {product.price * product.quantity}</h3>
                             <p>{product.description}</p>
-                            <p>{product.content}</p>
+                            
 
                             <div className="amount">
                                 <button onClick={() => decrement(product._id)}> - </button>
@@ -108,14 +119,19 @@ function Cart() {
                     </div>
                 ))
             }
+                </div>
+            
 
             <div className="total">
-                <h3>Total: $ {total}</h3>
+                <h3>Total:</h3>
+                <span className='total-span'>$ {total}</span>
                 <PaypalButton
                 total={total}
                 tranSuccess={tranSuccess} />
             </div>
         </div>
+            </div>
+            
     )
 }
 

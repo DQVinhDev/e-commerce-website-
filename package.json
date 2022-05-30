@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "bcrypt": "^5.0.1",
     "cloudinary": "^1.29.1",
     "concurrently": "^7.1.0",

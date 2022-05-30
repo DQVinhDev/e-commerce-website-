@@ -2,6 +2,8 @@
 import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import {globalState} from '../../../../globalState'
+import Bag from '../../../headers/icon/bag-shopping-solid.svg'
+
 
 function BtnRender({product,deleteProduct}) {
     const state = useContext(globalState)
@@ -14,7 +16,7 @@ function BtnRender({product,deleteProduct}) {
             {
                 isAdmin ? 
                 <>
-                    <Link id="btn_buy" to="#!" 
+                    <Link id="btn_buy-delete" to="#!" 
                     onClick={() =>deleteProduct(product._id, product.images.public_id)}>
                         Delete
                     </Link>
@@ -24,12 +26,19 @@ function BtnRender({product,deleteProduct}) {
                 </>
                 : <>
                     <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
-                        Buy
+                        
+                        <span id="btn_buy-img"><img src={Bag} alt="" width="20"  />
+                        Add
+                        </span>
+                        
+
                     </Link>
-                    <Link id="btn_view" to={`/detail/${product._id}`}>
+                    {/* <Link id="btn_view" to={`/detail/${product._id}`}>
                         View
-                    </Link>
+                    </Link> */}
+                    
                 </>
+                
             }
                 
         </div>

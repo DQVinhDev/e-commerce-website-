@@ -26,9 +26,11 @@ function Login() {
     }
 
     return (
+        
         <div className="login-page">
             <form onSubmit={loginSubmit}>
-                <h2>Login</h2>
+                <h2 className="login-page-h2">Sign in</h2>
+                <span>Your account for everything Quang Vinh Shop</span>
                 <input type="email" name="email" required
                 placeholder="Email" value={user.email} onChange={onChangeInput} />
 
@@ -36,8 +38,8 @@ function Login() {
                 placeholder="Password" value={user.password} onChange={onChangeInput} />
 
                 <div className="row">
-                    <button type="submit">Login</button>
-                    <Link to="/register">Register</Link>
+                    <button type="submit">Sign in</button>
+                    <Link className="row-link" to="/register">Don't have an account? Register here!</Link>
                 </div>
             </form>
         </div>

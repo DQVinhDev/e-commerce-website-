@@ -1,9 +1,19 @@
-.products{
+.products {
+    background-color: #FAF9F8;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    
+    
+
+}
+.product-all-card{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-items: center;
-    margin: 20px 0;
+     
+
+    background-color: #FAF9F8
 }
 
 /* ----------- Product Item ----------------- */
@@ -39,8 +49,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 15px 0;
+    flex-wrap: nowrap;
+    padding: 25px 0 15px 0;
+    background-color: #FAF9F8;
 }
 .filter_menu select, input{
     border: 1px solid #ccc;
@@ -48,18 +59,95 @@
     height: 40px;
     padding: 0 5px;
 }
-.filter_menu input{
-    flex: 1;
-    margin: 0 10px;
+.filter_menu .input-text{
+    width: 50%;
 }
+.filter_menu .input-text input{
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid #555;
+    position: relative;
+    width: 90%;
+    
+   
+}
+
+.filter_menu span{
+    font-weight: bolder;
+}
+.filter_menu .row{
+    font-size: 15px;
+}
+
+.filter_menu .input-text span{
+    
+   
+    margin-top: 4px;
+    
+    font-size: 15px;
+    z-index: 2;
+    filter: invert(62%) sepia(10%) saturate(335%) hue-rotate(194deg) brightness(87%) contrast(85%);
+}
+.filter_menu .row{
+    position: relative;
+    
+}
+
+
 
 /* -------------------- Load More --------------- */
 .load_more{
     text-align: center;
+    
+}
+.load_more:hover{
+    opacity: 0.8;
 }
 .load_more button{
+    color: #ccc;
+    background-color: #555;
     padding: 10px 25px;
     margin-bottom: 20px;
     border: 1px solid #555;
     text-transform: capitalize;
+    border-radius: 5px;
+
+}
+.row-category{
+    padding-top: 170px;
+    padding-left: 50px;
+    
+}
+.row-category .row-category-first{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #222222;
+}
+.row-category-second{
+    font-size: 13px;
+    color: #222222;
+}
+.row-category button{
+    display: block;
+}
+.row-category-second:hover{
+    color: red;
+}
+.product-all-card-content-h2{
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 30px 0 30px 0;
+    color: #222222;
+}
+.product-all-card-content-description{
+    padding: 0 0 30px 0;
+    color: #222222;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.product-all-card-main{
+    width: 80%;
+}
+.row{
+    padding-left: 25px;
 }

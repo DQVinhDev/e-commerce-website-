@@ -1,9 +1,9 @@
 import React, {createContext, useState, useEffect} from 'react'
 import ProductsAPI from './api/ProductsAPI'
-import UserAPI from './api/UserAPI'
+import UserAPI from './api/UserApi'
 import CategoriesAPI from './api/CategoriesAPI'
 
-import axios from 'axios'
+import axios from 'axios'   
 
 export const globalState = createContext()
 

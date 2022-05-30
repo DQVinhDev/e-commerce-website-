@@ -3,6 +3,7 @@ import React, {useContext,useEffect,useState} from "react";
 import {useParams, Link} from 'react-router-dom'
 import {globalState} from '../../../globalState'
 import ProductItem from "../utils/productitem/ProductItem";
+import Bag from '../../headers/icon/bag-shopping-solid.svg'
 
 
 
@@ -27,25 +28,30 @@ function DetailProduct() {
     return (
         <>
             <div className="detail">
-                <img src={detailProduct.images.url} alt="" />
+                <img className="detail-img" src={detailProduct.images.url} alt="" />
                 <div className="box-detail">
                     <div className="row">
                         <h2>{detailProduct.title}</h2>
-                        <h6>#id: {detailProduct.product_id}</h6>
+                        
                     </div>
-                    <span>$ {detailProduct.price}</span>
+                    <span className="box-detail-price">$ {detailProduct.price}</span>
                     <p>{detailProduct.description}</p>
-                    <p>{detailProduct.content}</p>
+                    
                     <p>Sold: {detailProduct.sold}</p>
+                    
                     <Link to="/cart" className="cart"
                     onClick={() => addCart(detailProduct)}>
-                        Buy Now
+                        <span className="cart-span">
+                        <img src={Bag} alt="" width="20"/> 
+                        <span className="cart-span-2">Add</span>
+                        </span>
+                       
                     </Link>
                 </div>
             </div>
 
             <div>
-                <h2>Related products</h2>
+                <h2>Others also bought</h2>
                 <div className="products">
                     {
                         products.map(product => {

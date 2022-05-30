@@ -1,18 +1,24 @@
 .detail{
+    background-color: #FAF9F8;
     width: 100%;
+    overflow: hidden;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
     padding: 50px;
     font-size: 150%;
 }
-.detail img{
-    max-width: 400px;
+.detail .detail-img{
+    max-width: 650px;
     width: 100%;
     margin: 20px;
-    height: 450px;
+    height: 800px;
     object-fit: cover;
     display: block;
+}
+.box-detail .box-detail-price{
+    font-size: 20px;
 }
 .box-detail{
     max-width: 500px;
@@ -20,27 +26,47 @@
     margin: 5px 20px;
 }
 .box-detail .row{
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .box-detail h2{
-    text-transform: uppercase;
-    color: darkblue;
+    font-size: 18px;
+    color: #222222;
     letter-spacing: 2px;
-    font-weight: 2rem;
+    font-weight: bolder; 
+
 }
 .box-detail p{
+    font-size: 15px;
     line-height: 1.5;
+    
     margin: 10px 0;
-    opacity: 0.8;
+    color: #222222;
 }
 .box-detail .cart{
-    background: #333;
+    background: #222222;
     color: white;
+    font-size: 20px;
     margin-top: 10px;
     padding: 10px 25px;
-    display: inline-block;
-    text-transform: uppercase;
+    display: block;
     letter-spacing: 2px;
+}
+.box-detail .cart .cart-span-2{
+    padding: 10px 10px 0 10px   ;
+    display: flex;
+    align-items: center;
+}
+.box-detail .cart .cart-span{
+   
+    display: flex;
+    justify-content: center;
+}
+.box-detail .cart img{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 0 ;
+    filter: invert(62%) sepia(10%) saturate(335%) hue-rotate(194deg) brightness(87%) contrast(85%);
 }
