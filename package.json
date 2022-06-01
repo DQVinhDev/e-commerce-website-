@@ -12,9 +12,7 @@
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-prebuild": "cd client && npm install ",
-    
     "heroku-postbuild": "npm run build"
-  
   },
   "engines": {
     "npm": "8.5.5",
