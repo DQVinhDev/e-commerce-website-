@@ -11,9 +11,9 @@
     "client-install": "cd client && npm install",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-prebuild": "npm install && cd client && npm install ",
     
-    "heroku-postbuild": "npm run build"
+    
+    "heroku-postbuild": "cd client && npm install && npm run build"
   
   },
   "engines": {
