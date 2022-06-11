@@ -1,13 +1,13 @@
  
 
 
-# h1 WEB DEVELOPMENT REPORT
+#  WEB DEVELOPMENT REPORT
 by DANG QUANG VINH - ITITIU19247
 
-# h2 REPORT
+# REPORT
 
 
-1. INTRODUCTION
+## 1. INTRODUCTION
 
 1.1/ Problems Statement
 
@@ -17,7 +17,7 @@ Given the shortcomings and weaknesses of the offline business model, developing 
 
 With MERN (MongoDB, Express.js framework, ReactJS library, NodeJS platform) is one of the powerful stacks that can help us develop an e-commerce web application that can meet the needs of both customers and retailers.
 
-2.LITERATURE REVIEW
+## 2.LITERATURE REVIEW
 2.1. JavaScript
 
 JavaScript is a scripting language that is object-oriented and cross-platform. Objects from the host environment can be linked to JavaScript and used in various ways.
@@ -66,7 +66,7 @@ React is built around components, not templates like other frameworks. The creat
 ReactJS generates HTML tags in a different way than we normally do, but it uses Component to wrap HTML tags into stratified objects to render.
 The render function is the most important React Component. It is a function that handles HTML tag generation as well as a demonstration of the ability to process through Virtual-DOM. Any changes of data at any time will be processed and updated immediately by Virtual-DOM. [10]
 
-3.SYSTEM DESIGN
+## 3.SYSTEM DESIGN
 3.1.Features
 3.1.1.User.
 
@@ -123,7 +123,7 @@ Shopping cart
 
 
 
-4.CONCLUSION AND DISCUSSION
+## 4.CONCLUSION AND DISCUSSION
 4.1.List of accomplished work
 Currently, I have been built:
 •	Login.
@@ -143,7 +143,7 @@ Currently, I have been built:
 
 
 
-References 
+## References 
 
 1. E-commerce Definition – What is E-commerce? [Internet]. Shopify.com. Availa- ble from: https://www.shopify.com/encyclopedia/what-is-ecommerce 
 2. JavaScript [Internet]. Mozilla.org. Available from: https://devel- oper.mozilla.org/en-US/docs/Web/JavaScript 
