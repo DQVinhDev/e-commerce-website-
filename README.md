@@ -3,21 +3,11 @@
 
 WEB DEVELOPMENT REPORT
 by
-DANG QUANG VINH - ITITIU19247
+#h1 DANG QUANG VINH - ITITIU19247
 
 
 
-Submitted to: School of Computer Science and Engineering
 
-International University, VNU-HCM
-
-June 2022
-
-Lecture:
-
-Nguyen Van Sinh 
-Pham Quoc Son Lam
-TABLE OF CONTENTS
 
 I. INTRODUCTION
 II. LITERATURE REVIEW
@@ -25,7 +15,7 @@ III. SYSTEM DESIGN
 IV. CONCLUSION AND DISCUSSION
 
 
-REPORT
+#h2 REPORT
 
 
 1. INTRODUCTION
