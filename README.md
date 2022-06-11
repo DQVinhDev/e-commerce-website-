@@ -68,58 +68,8 @@ The render function is the most important React Component. It is a function that
 
 ## 3.SYSTEM DESIGN
 3.1.Features
-3.1.1.User.
-
-In homepage, user can see all of product.
-
- 
-
-Searching product on searching bar.
-
-
-
-
-or chose product with category filter which sort by their price or time of product upload.
-
-When you click in user icon, website move to sign in page which you can login your account 
-
-
-or register new user to buy product. 
-
-After login to your account, you can add product to shopping cart.
- 
-and buy it through your paypal account.
-
-3.1.2.Admin.
-
-On the admin page, the header will change a little 
- 
-
-which have fix icon to create new category
-
-
-
-
-Create new product base on category that have existed. 
-
-
-Or delete any product you want with click in check box product and delete button.
-
- 
-
-3.2.System Design Specification
-
-3.2.1. Use-cases Diagram
-
-
-3.2.2.Sequence Diagram
-
-	Searching Products Sequence Diagram
-
-3.3. Activity Diagram
-Shopping cart
- 
-3.4. Database Diagram 
+You can test all features through heroku link
+###https://e-commerce-websiteee.herokuapp.com/
 
 
 
