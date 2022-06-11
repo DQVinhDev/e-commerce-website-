@@ -22,27 +22,12 @@ With MERN (MongoDB, Express.js framework, ReactJS library, NodeJS platform) is o
 
 JavaScript is a scripting language that is object-oriented and cross-platform. Objects from the host environment can be linked to JavaScript and used in various ways.
 JavaScript includes standard libraries for objects such as Array, Date, Math, and the essential components of programming languages such as managers, control framework, and statements.
-
-JavaScript could be extended for many principles by adding objects, such as:
-
-•		Client-side JavaScript: JavaScript is created by implementing objects that control the browser and the document object model (DOM). For example, client-side extensions allow an application to influence HTML page components and respond to user behavior such as mouse hovers, form input, and page changeover.
-•		Server-side JavaScript: JavaScript is created by implementing the additional objects needed to run JavaScript on the server. This server-side extension, for example, allows an application to connect to a database, transfer data frequently from one request to another section of the application, or execute an application with another function file on the server.
-
-In 1996, JavaScript was officially named ECMAScript. ECMAScript 2 was released in 1998 and ECMAScript 3 was released in 1999. It is continuously evolving into today's JavaScript, now works on all browsers and devices from mobile to desktop. Open stand- ard language can be used by association to establish their own JavaScript applications. The ECMAScript Standard is one of the parts of the ECMA-262 specification.
-
-ISO has approved the ECMA-262 standard at ISO-16262. The ECMAScript standard does not include descriptions for the DOM, it is standardized by the W3C. The DOM specifies how your scripts display HTML objects. To get a advance anticipate of the distinctive innovations used when programming with JavaScript, check out the JavaScript technology analysis article. 
+ 
 
 2.2. NodeJS
 
 Node.js is an open source, a system application and furthermore is an environment for servers. Nodejs is an independent development platform based on Chrome's JavaScript Runtime that allows us to quickly and easily build network applications. Node.js executes code using the Google V8 JavaScript engine. Furthermore, a large proportion of critical modules are written in JavaScript.
 
-Node.js is used in products that receive a lot of traffic. Nonetheless, Node.js handles applications that need to spread quickly, innovate, or build Startup projects as quickly as possible. 
-
-Applications using NodeJS: 
-• WebSocket server 
-• Notification system 
-• Applications that need to upload files on the client. 
-• Other real-time data applications.
 
 2.3. Expressjs
 Express.js is a framework built on top of Nodejs. It has robust features for web and mobile development. Because Express.js supports HTTP and middleware methods, the API is both powerful and simple to use.
@@ -54,8 +39,7 @@ MongoDB is an open source database that is also the most popular NoSQL (*) datab
 MongoDB Atlas is MongoDB's cloud database launched in 2016 on AWS, Microsoft Az- ure and Google Cloud Platform.
 The data in each Cluster in the Atlas is stored by Replication mechanism, with 3 nodes: 1 master (primary) and 2 slaves (secondary).
 
-			Figure 1. MongoDB Atlas screenshot.
- 
+		
 2.5. React JS
 2.5.1.Virtual-DOM 
 
@@ -69,7 +53,7 @@ The render function is the most important React Component. It is a function that
 ## 3.SYSTEM DESIGN
 3.1.Features
 You can test all features through heroku link
-###https://e-commerce-websiteee.herokuapp.com/
+### https://e-commerce-websiteee.herokuapp.com/
 
 
 
