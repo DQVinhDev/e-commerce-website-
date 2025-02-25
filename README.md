@@ -1,4 +1,4 @@
-```markdown
+
 # E-Commerce Web Application (MERN Stack)
 
 ## 🚀 About the Project
