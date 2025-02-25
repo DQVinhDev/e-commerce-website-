@@ -88,11 +88,4 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 ## 📜 License
 This project is licensed under the [MIT License](LICENSE).
 
----
 
-## 📌 Next Steps
-1. Customize the frontend UI using React components.
-2. Add additional API endpoints for order management.
-3. Implement payment gateway integration (e.g., Stripe or PayPal).
-
-```
